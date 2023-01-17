@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200pt" height="1200pt" version="1.1" viewBox="0 0 1200 1200" xmlns="http://www.w3.org/2000/svg">
+ <g fill="none" stroke="#000" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2">
+  <path transform="scale(18.75)" d="m15 37c0 2.2092-1.7908 4-4 4s-4-1.7908-4-4 1.7908-4 4-4 4 1.7908 4 4"/>
+  <path transform="scale(18.75)" d="m11 51v10h-4v-10m4 10h4v-16l3 4 5 1 1-4-3.2-1-2.6171-2.755c-0.755-0.795-1.804-1.245-2.9-1.245h-8.2829c-2.209 0-4 1.791-4 4v6h4v-6"/>
+  <path transform="scale(18.75)" d="m57 12h-34c-2.209 0-4 1.791-4 4v27.105l1.8 1.895 3.2 1-1 4-4-0.8v7.8c0 2.209 1.791 4 4 4h34c2.209 0 4-1.791 4-4v-41c0-2.209-1.791-4-4-4z"/>
+  <path transform="scale(18.75)" d="m47 9v-4c0-1.105-0.895-2-2-2h-10c-1.105 0-2 0.895-2 2v4h-3c-1.105 0-2 0.895-2 2v2c0 1.105 0.895 2 2 2h20c1.105 0 2-0.895 2-2v-2c0-1.105-0.895-2-2-2z"/>
+  <path transform="scale(18.75)" d="m40 6v4" stroke-dasharray="2"/>
+  <path transform="scale(18.75)" d="m32 26h26"/>
+  <path transform="scale(18.75)" d="m23 35h6v6h-6z"/>
+  <path transform="scale(18.75)" d="m32 41h26"/>
+  <path transform="scale(18.75)" d="m23 53 3 3 7-7"/>
+  <path transform="scale(18.75)" d="m32 56h26"/>
+  <path transform="scale(18.75)" d="m23 20h6v6h-6z"/>
+ </g>
+</svg>
