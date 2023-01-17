@@ -2,7 +2,7 @@
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/Anathem_logo_3.jpg';
+import FooterLogo from 'assets/Anathem_logo_4.jpg';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
