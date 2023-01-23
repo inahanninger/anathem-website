@@ -25,7 +25,7 @@ export default function TeamPage() {
           Richard Apletree
         </Heading>
         <Text className="info__designation" >
-          CEO and Founder
+          Co-Founder and CEO
         </Text>
       </Box>
       <Box sx={styles.socialShare} className="social__share">

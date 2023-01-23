@@ -2,7 +2,7 @@
 import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import Logo from 'components/logo';
-import AnathemLogo from 'assets/Anathem_logo_4.jpg';
+import AnathemLogo from 'assets/Anathem_logo_3.jpg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import data from './header.data';

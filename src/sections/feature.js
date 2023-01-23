@@ -57,7 +57,7 @@ const data = [
     altText: 'Scalable',
     title: 'Scalable',
     text:
-      'Esaily scalable cloud based solution, for thousands of simulatanious users.',
+      'Esaily scalable cloud based solution, for thousands of simulataneous users.',
     link: '',
   },
   {

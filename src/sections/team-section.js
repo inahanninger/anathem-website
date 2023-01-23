@@ -17,7 +17,7 @@ const data = [
     imgSrc: Member1,
     altText: 'Richard Apletree',
     title: 'Richard Apletree',
-    designation: 'CEO and Founder',
+    designation: 'Co-Founder and CEO',
     path: '/our-team/richard-apletree',
     socialProfile: [
       {
@@ -67,7 +67,7 @@ const data = [
     imgSrc: Member3,
     altText: 'Ina Hanninger',
     title: 'Ina Hanninger',
-    designation: 'Co-Founder and Full-Stack Engineer',
+    designation: 'Co-Founder and CTO',
     path: '/our-team/ina-hanninger',
     socialProfile: [
       {
