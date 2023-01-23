@@ -25,7 +25,7 @@ export default function TeamPage() {
           Ina Hanninger
         </Heading>
         <Text className="info__designation" >
-          Co-Founder and <br/> Full-Stack Engineer
+          Co-Founder and CTO
         </Text>
       </Box>
       <Box sx={styles.socialShare} className="social__share">
