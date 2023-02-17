@@ -1,4 +1,4 @@
-import { Box, Label, Input, Textarea, Button } from 'theme-ui';
+import { Box, Label, Input, Textarea, Button, Message, Alert, Close } from 'theme-ui';
 import React, {useState} from 'react';
 import List from './list';
 
@@ -52,7 +52,8 @@ export default function ContactForm(
 
     let isValidForm = handleValidation();
 
-     
+    if (isValidForm) {
+      setButtonText("Sending");
       const res = await fetch("/api/sendgrid", {
         body: JSON.stringify({
           email: email,
@@ -66,30 +67,83 @@ export default function ContactForm(
         },
         method: "POST",
       });
-
       const { error } = await res.json();
       if (error) {
         console.log(error);
+        setShowSuccessMessage(false);
+        setShowFailureMessage(true);
+        setButtonText("Send");
         return;
       }
-    console.log(fullname, email, phone, company, message);
+      setShowSuccessMessage(true);
+      setShowFailureMessage(false);
+      setButtonText("Send");
+      console.log(fullname, email, phone, company, message);
+      // Reset form fields
+      setFullname("");
+      setEmail("");
+      setPhone("");
+      setCompany("");
+      setMessage("");
+    }
   };
-
 
 
   return (
     <Box as="form" onSubmit={handleSubmit}>
           <Label htmlFor="fullname" sx={styles.forms.label}>Full Name</Label>
-          <Input name="fullname" id="fullname" mb={3} sx={styles.forms.input} />
+          <Input name="fullname" id="fullname" mb={3} sx={styles.forms.input} 
+          value={fullname}
+          onChange={(e) => {
+            setFullname(e.target.value);
+          }}/>
+          {errors?.fullname && (
+          <Alert variant="secondary">
+            Full name cannot be empty.
+          </Alert>)}
           <Label htmlFor="email" sx={styles.forms.label}>Email Address</Label>
-          <Input type="email" name="email" id="email" mb={3} sx={styles.forms.input} />
+          <Input type="email" name="email" id="email" mb={3} sx={styles.forms.input} 
+          value={email}
+          onChange={(e) => {
+              setEmail(e.target.value);
+            }}/>
+          {errors?.email && (
+          <Alert variant="secondary">
+            Email field cannot be empty.
+          </Alert>)}
           <Label htmlFor="phone" sx={styles.forms.label}>Phone Number</Label>
-          <Input type="phone" name="phone" id="phone" mb={3} sx={styles.forms.input} />
+          <Input type="phone" name="phone" id="phone" mb={3} sx={styles.forms.input}
+          value={phone} 
+          onChange={(e) => {
+            setPhone(e.target.value);
+          }}/>
           <Label htmlFor="company" sx={styles.forms.label} >Company/ Practice/ Hospital Name</Label>
-          <Input name="company" id="company" mb={3} sx={styles.forms.input} />
+          <Input name="company" id="company" mb={3} sx={styles.forms.input}
+          value={company} 
+          onChange={(e) => {
+            setCompany(e.target.value);
+          }}/>
           <Label htmlFor="message" sx={styles.forms.label}>Message</Label>
-          <Textarea name="message" id="message" rows={6} mb={3} sx={styles.forms.textarea}/>
-          <Button sx={styles.forms.button}>Send Message</Button>
+          <Textarea name="message" id="message" rows={6} mb={3} sx={styles.forms.textarea}
+          value={message}
+          onChange={(e) => {
+            setMessage(e.target.value);
+          }}/>
+          {errors?.message && (
+          <Alert variant="secondary">
+            Message body cannot be empty.
+          </Alert>)}
+          <Button sx={styles.forms.button}>{buttonText}</Button>
+            {showSuccessMessage && (
+              <Message>
+                Thank you! Your Message has been delivered.
+              </Message>
+            )}
+            {showFailureMessage && (
+              <Message>
+                Oops! Something went wrong, please try again.
+              </Message>
+            )}
           </Box>
   );
 }
