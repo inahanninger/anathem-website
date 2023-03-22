@@ -12,25 +12,25 @@ const data = [
   {
     id: 1,
     imgSrc: Time,
-    altText: 'Increased efficiency & capacity.',
-    title: 'Increased efficiency & capacity.',
+    altText: 'Increased efficiency & capacity',
+    title: 'Increased efficiency & capacity',
     text:
     'Anathem will reduce documentation time by 75%, allowing clinicians more patient facing time.'  
   },
   {
     id: 2,
     imgSrc: Doctor,
-    altText: 'Increase clinician satisfaction & retention.',
-    title: 'Increase clinician satisfaction & retention.',
+    altText: 'Increase clinician satisfaction & retention',
+    title: 'Increase clinician satisfaction & retention',
     text:  'Clinicians have less administrative burden and fewer symptoms of burnout, helping them stay in practice longer.'  
   },
   {
     id: 3,
     imgSrc: Documentation,
-    altText: 'Higher-documentation quality.',
-    title: 'Higher-documentation quality.',
+    altText: 'Higher documentation quality',
+    title: 'Higher documentation quality',
     text:
-    'Anathem will enable accurate collection of patient level and process data without additional clinician burden driving quality improvement at service and trust level.'
+    'Anathem will enable accurate collection of patient and process data without additional clinician burden, driving quality improvement at service and trust level.'
   },
   {
     id: 4,
@@ -69,9 +69,9 @@ export default function ProductDetails() {
 
 const styles = {
   grid: {
-    px: [0, null, null, '40px', null, '80px'],
+    px: [0, null, null, '40px', null, '7px'],
     pt: [0, null, null, null, null, null, null, 3],
-    gridGap: ['35px 0', null, '40px 0'],
+    gridGap: ['35px 0', null, '35px 0'],
     gridTemplateColumns: [
       'repeat(1,1fr)',
       null,

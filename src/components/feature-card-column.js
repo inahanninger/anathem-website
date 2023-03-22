@@ -29,7 +29,7 @@ const styles = {
   img: {
     mx: 'auto',
     mb: [3, null, 4, null, null, 5],
-    width: ['80px', '90px', null, null, null, '100px', 'auto'],
+    width: ['80px', '90px', null, null, null, '100px', '110px'],
     borderRadius: '8px'
   },
   wrapper: {
@@ -37,7 +37,7 @@ const styles = {
     display: 'flex',
     flexDirection: 'column',
     title: {
-      fontSize: [3, null, null, null, null, 4],
+      fontSize: [3, null, null, null, null, 3],
       color: 'heading_secondary',
       lineHeight: 1.4,
       fontWeight: 700,
