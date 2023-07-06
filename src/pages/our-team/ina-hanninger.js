@@ -42,7 +42,7 @@ export default function TeamPage() {
     </Box>
         <Box>
           <Text sx={styles.text}>
-          Ina is an ex full-stack developer at Goldman Sachs and has worked on a wide range of projects, from open-source data engineering platforms to consumer finance applications partnered with Apple, used by over 900k customers.
+          Ina was previously a full-stack developer at Goldman Sachs and has worked on a wide range of projects, from open-source data engineering platforms to consumer finance applications partnered with Apple, used by over 900k customers.
           Deeply moved by her own experiences with mental health, along with those of her friends and family, she is on a mission to improve access to mental healthcare for all. 
           <br/>An MEng Engineering Graduate from Oxford University, she specialised in Machine Learning, Information and Biomedical Engineering, with research experience applying cutting-edge ML to medicine.
           She is passionate about equalizing investment in technology and innovation towards socially-impactful use cases and sectors currently underserved in society.
