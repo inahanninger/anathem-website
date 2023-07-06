@@ -1,6 +1,6 @@
 /** @jsx jsx */ /** @jsxRuntime classic */
 import { jsx } from 'theme-ui';
-import { Container, Grid, Box } from 'theme-ui';
+import { Container, Grid, Box, Heading } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureBox from 'components/feature-card-boxes.js';
 import Image from './../components/image';
@@ -95,9 +95,14 @@ export default function Feature() {
             />
           ))}
         </Grid>
-        <Box sx={styles.bottomHeading}>
+        {/* <Box sx={styles.bottomHeading}>
           Anathem - Integrates with the 4 leading EPR providers.
-        </Box>
+        </Box> */}
+        <Box sx={styles.bottomHeading}>
+      <Heading as="h2" sx={styles.text} variant="title">
+      Anathem - AI based voice  solution - designed to save clinicians time and energy.
+      </Heading>
+      </Box>
       </Container>
     </section>
   );
@@ -142,4 +147,9 @@ const styles = {
       'repeat(3,1fr)',
     ],
   },
+  text: {
+    position: 'relative',
+    margin: 'auto',
+    display: 'block'
+  }
 };

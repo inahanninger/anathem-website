@@ -61,7 +61,7 @@ export default function KeyFeature() {
 
 const styles = {
   grid: {
-    px: [0, null, null, '40px', null, '80px'],
+    px: [0, null, null, '40px', null, '40px'],
     pt: [0, null, null, null, null, null, null, 3],
     gridGap: ['35px 0', null, '40px 0'],
     gridTemplateColumns: [

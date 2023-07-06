@@ -36,7 +36,9 @@ export default function TeamPage() {
     </Box>
         <Box>
           <Text sx={styles.text}>
-          Guy is a psychiatrist with 30 years experience. Lead Clinical Director at Berkshire NHS trust, as well as Chief Clinical Information Officer and Clinical Safety Officer. Numerous NHS England responsibilities including Getting It Right First Time National Clinical Lead CYPMH Crisis and Urgent Care, and Finance Officer at the Faculty of Child and Adolescent Psychiatry.          </Text>
+          Guy is a psychiatrist with 20 years experience. He is the Lead Clinical Director at Berkshire NHS trust, as well as Chief Clinical Information Officer and Clinical Safety Officer. 
+          Dedicated to improving healthcare and health delivery to populations and not just individuals, Guy has also held numerous NHS England responsibilities including Getting It Right First Time National Clinical Lead CYPMH Crisis and Urgent Care, and Finance Officer at the Faculty of Child and Adolescent Psychiatry.         
+          </Text>
         </Box>
         </Grid>
         </Container>

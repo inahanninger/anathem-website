@@ -36,7 +36,8 @@ export default function TeamPage() {
     </Box>
         <Box>
           <Text sx={styles.text}>
-          Richard is an experienced CFO, CRO and CEO. CFO of giffgaff for 7 years growing from £100k p.a. revenue to £400m p.a. CEO of giffgaff’s financial services arm. Since 2019 CFO of Mind Foundry an AI spinout from Oxford University, more recently contemporaneously holding the CRO position.
+          Richard is an experienced CFO, CRO and CEO. CFO of giffgaff for 7 years growing from £100k p.a. revenue to £400m p.a. CEO of giffgaff’s financial services arm. 
+          Since 2019, he has served as CFO of Mind Foundry an AI spinout from Oxford University working on "high stakes" AI applications, more recently contemporaneously holding the CRO position.
           </Text>
         </Box>
         </Grid>

@@ -32,18 +32,21 @@ export default function TeamPage() {
           <Link  href='https://www.linkedin.com/in/ina-hanninger-b85216127/' >
             <FaLinkedinIn />
           </Link>
-          {/* <Link  href='https://medium.com/@inahanninger' >
+          <Link  href='https://medium.com/@inahanninger' >
             <FaMedium />
           </Link>
           <Link  href='https://github.com/inahanninger' >
             <FaGithub />
-          </Link> */}
+          </Link>
       </Box>
     </Box>
         <Box>
           <Text sx={styles.text}>
-          Ina is a full stack developer at Goldman Sachs and has worked on a range of high-profile projects such as the open source data platform, Legend, and on building consumer finance applications for Marcus UK and Apple, used by over 900k customers. 
-          <br/>An MEng Engineering Science Graduate from Oxford University, she specialised in Machine Learning, Information and Biomedical Engineering.
+          Ina was previously a full-stack developer at Goldman Sachs and has worked on a wide range of projects, from open-source data engineering platforms to consumer finance applications partnered with Apple, used by over 900k customers.
+          Deeply moved by her own experiences with mental health, along with those of her friends and family, she is on a mission to improve access to mental healthcare for all. 
+          <br/>An MEng Engineering Graduate from Oxford University, she specialised in Machine Learning, Information and Biomedical Engineering, with research experience applying cutting-edge ML to medicine.
+          She is passionate about equalizing investment in technology and innovation towards socially-impactful use cases and sectors currently underserved in society.
+          As an avid technologist, in her spare time she also teaches introductory coding courses for CodeFirstGirls, helping women from non-technical backgrounds transition into tech careers.
         </Text>
         </Box>
         </Grid>
@@ -74,11 +77,28 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'column',
-    py: [0, null, 4, 5, 6],
-    // px: [2, null, 6, 7],
+    py: [0, null, 4, 5, 7],
+    px: [2, null, 6, 5],
     transition: 'ease-in-out 0.4s',
     borderRadius: '8px',
     position: 'relative',
+    '&:hover': {
+      bg: 'light_blue',
+      boxShadow: ['none', null, '0 4px 10px rgba(39, 83, 123, 0.12)'],
+      '.info__name': {
+        color: 'primary',
+      },
+      '.info__designation': {
+        color: 'primary',
+      },
+      '.social__share': {
+        opacity: 1,
+        a: {
+          my: 0,
+          py: [0, null, 1],
+        },
+      },
+    },
   },
 
   memberThumb: {
@@ -99,6 +119,7 @@ const styles = {
       lineHeight: [1.25, 1.35],
       transition: 'color 0.25s',
       mb: 1,
+      px:5
     },
     designation: {
       fontSize: ['14px', null, null, 2],
@@ -120,11 +141,12 @@ const styles = {
     transition: 'all 0.25s',
     opacity: [1, null, 1],
     pt: 2,
+    py:4,
     a: {
       fontSize: [0, 1, null, 2],
       color: ['text', null, 'primary'],
       lineHeight: '1em',
-      my: [0, null, '-2px'],
+      my: [0, null, '2px'],
       px: 1,
       transition: 'all 0.25s',
       color: ['primary', null, 'text'],
