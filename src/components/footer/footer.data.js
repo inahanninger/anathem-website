@@ -17,5 +17,9 @@ export default {
       path: '/contact',
       label: 'Contact',
     },
+    {
+      path: '/privacy-policy',
+      label: 'Privacy Policy',
+    },
   ],
 };
