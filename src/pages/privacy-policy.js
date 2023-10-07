@@ -4,10 +4,8 @@ import { StickyProvider } from 'contexts/app/app.provider';
 import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
-import MainTitle from '../sections/main-title';
 import SectionHeader from '../components/section-header';
 import PatternBG from 'assets/patternBG.png';
-import { Table } from '@component-controls/components';
 
 
   const rows = [
