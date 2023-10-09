@@ -15,7 +15,7 @@ const data = [
     altText: 'Vector',
     title: 'Personal Record Intelligence',
     text:
-    'Seamlessly summarise patient records from existing electronic patient record systems.It will be the first system to allow a clinician to prepare for a patient consultation in minutes, not hours.'  
+    'Seamlessly summarise patient records from existing electronic patient record systems. It will be the first system to allow a clinician to prepare for a patient consultation in minutes, not hours.'  
   },
   {
     id: 2,
